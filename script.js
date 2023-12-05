@@ -45,3 +45,17 @@ export function exercise03(args) {
 }
 return count
 }
+
+export function exercise04(args) {
+  const input = args
+  let count = 1
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    if (currentElement === " "){
+      count = count +1
+    }
+}
+return count
+}
