@@ -27,3 +27,21 @@ export function exercise02(args) {
 }
 return result.join("")
 }
+
+export function exercise03(args) {
+  const input = args
+  let count = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    if (currentElement === "e"){
+      count = count +1
+    }
+      
+    else if (currentElement === "E"){
+      count = count +1
+    }    
+}
+return count
+}
