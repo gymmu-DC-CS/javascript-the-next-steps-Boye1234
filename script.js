@@ -4,13 +4,11 @@ export function exercise01(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-   if (currentElement === "e")
-    result.push("")
-  else if (currentElement === "E")
-    result.push("")
-  else {
-    result.push(currentElement)
-  }
+    if (currentElement === "e") result.push("")
+    else if (currentElement === "E") result.push("")
+    else {
+      result.push(currentElement)
+    }
   }
   return result.join("")
 }
@@ -24,8 +22,8 @@ export function exercise02(args) {
 
     const capitalizedElement = currentElement.toUpperCase()
     result.push(capitalizedElement)
-}
-return result.join("")
+  }
+  return result.join("")
 }
 
 export function exercise03(args) {
@@ -35,15 +33,13 @@ export function exercise03(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
 
-    if (currentElement === "e"){
-      count = count +1
+    if (currentElement === "e") {
+      count = count + 1
+    } else if (currentElement === "E") {
+      count = count + 1
     }
-      
-    else if (currentElement === "E"){
-      count = count +1
-    }    
-}
-return count
+  }
+  return count
 }
 
 export function exercise04(args) {
@@ -53,9 +49,11 @@ export function exercise04(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
 
-    if (currentElement === " "){
-      count = count +1
+    if (currentElement === " ") {
+      count = count + 1
+    } else if (currentElement === "0") {
+      count = count - 1
     }
-}
-return count
+  }
+  return count
 }
