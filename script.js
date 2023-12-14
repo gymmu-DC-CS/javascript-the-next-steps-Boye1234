@@ -76,7 +76,7 @@ export function exercise06(args) {
   const input = args
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
+    const currentElement = input[i].charCodeAt()
     if (
       (currentElement >= 33 && currentElement <= 47) ||
       (currentElement >= 58 && currentElement <= 64) ||
