@@ -92,12 +92,15 @@ export function exercise06(args) {
 export function exercise07(args) {
   const input = args
 
-  for (let i = 0; i < input.length; i++) {
+  for (let i = 1; i < input.length - 1; i++) {
     const currentElement = input[i].charCodeAt()
-    const previousElement = input[i].charCodeAt()
-    const nextElement = input[i].charCodeAt()
+    const previousElement = input[i - 1].charCodeAt()
+    const nextElement = input[i + 1].charCodeAt()
 
-    if ((currentElement = 110) & (previousElement = 97) & (nextElement = 100)) {
+    if (
+      (currentElement === 110 && previousElement === 97) ||
+      (previousElement === 65 && nextElement === 100)
+    ) {
       return true
     }
   }
