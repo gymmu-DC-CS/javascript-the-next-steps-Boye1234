@@ -96,9 +96,24 @@ export function exercise07(args) {
     const currentElement = input[i].charCodeAt()
     const previousElement = input[i].charCodeAt()
     const nextElement = input[i].charCodeAt()
+
     if ((currentElement = 110) & (previousElement = 97) & (nextElement = 100)) {
       return true
     }
   }
   return false
+}
+
+export function exercise08(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e") result.push("3")
+    else {
+      result.push(currentElement)
+    }
+  }
+  return result.join("")
 }
