@@ -1,3 +1,5 @@
+//all of this code is not copied or looked up in the Internet. I solved everything alone or with slight help of classmates.
+
 export function exercise01(args) {
   const input = args
   const result = []
