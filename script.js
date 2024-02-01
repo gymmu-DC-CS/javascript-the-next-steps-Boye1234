@@ -100,7 +100,9 @@ export function exercise07(args) {
     const nextElement = input[i + 1].charCodeAt()
 
     if (
-      (currentElement === 110 && previousElement === 97) ||
+      (currentElement === 110 &&
+        previousElement === 97 &&
+        nextElement === 100) ||
       (previousElement === 65 && nextElement === 100)
     ) {
       return true
